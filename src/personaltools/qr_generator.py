@@ -31,7 +31,6 @@ def main():
         default=4,
         help="Border size in boxes (default: 4)"
     )
-    
     args = parser.parse_args()
     
     # Create QR code
@@ -52,8 +51,6 @@ def main():
     else:
         # Print to terminal
         qr.print_ascii()
-    
-    return 0
 
 
 if __name__ == "__main__":
