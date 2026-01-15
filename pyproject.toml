@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "personaltools"
+version = "0.1.0"
+description = "Collection of personal tools"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "mkofler96"},
+]
+dependencies = [
+    "qrcode[pil]>=7.4.2",
+]
+
+[project.scripts]
+qr-gen = "personaltools.qr_generator:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/personaltools"]
