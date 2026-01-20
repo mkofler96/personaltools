@@ -16,17 +16,14 @@ A matplotlib style optimized for IEEE publications and two-column journals. This
 
 ## Usage
 
-To use a style from this collection:
+The easiest way to use a style from this collection:
 
 ```python
 import matplotlib.pyplot as plt
-from pathlib import Path
+from personaltools import pltstyles
 
-# Get the path to the style file
-style_path = Path(__file__).parent / 'matplotlib_styles' / 'ieee.mplstyle'
-
-# Use the style
-plt.style.use(str(style_path))
+# Use the IEEE style
+plt.style.use(pltstyles.ieee)
 
 # Create your plot
 fig, ax = plt.subplots()
@@ -34,7 +31,7 @@ ax.plot([1, 2, 3], [1, 4, 9])
 plt.savefig('plot.png')
 ```
 
-Alternatively, if the package is installed, you can copy the style to your matplotlib config directory:
+Alternatively, you can copy the style to your matplotlib config directory:
 
 ```bash
 # Find your matplotlib config directory

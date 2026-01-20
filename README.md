@@ -54,14 +54,10 @@ Publication-quality matplotlib style files for scientific plotting.
 
 ```python
 import matplotlib.pyplot as plt
-from pathlib import Path
-import personaltools
-
-# Get the package directory
-package_dir = Path(personaltools.__file__).parent
+from personaltools import pltstyles
 
 # Use the IEEE style
-plt.style.use(str(package_dir / 'matplotlib_styles' / 'ieee.mplstyle'))
+plt.style.use(pltstyles.ieee)
 
 # Create your plot
 fig, ax = plt.subplots()
