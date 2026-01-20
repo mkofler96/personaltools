@@ -41,3 +41,29 @@ qr-gen "https://example.com" -o qr.png --box-size 15 --border 2
 - `-o, --output` - Output file path (e.g., qr.png). If not provided, displays in terminal
 - `--box-size` - Size of each box in pixels (default: 10)
 - `--border` - Border size in boxes (default: 4)
+
+### Matplotlib Styles
+
+Publication-quality matplotlib style files for scientific plotting.
+
+**Available styles:**
+
+- `ieee.mplstyle` - Optimized for IEEE publications and two-column journals
+
+**Usage:**
+
+```python
+import matplotlib.pyplot as plt
+from personaltools import pltstyles
+
+# Use the IEEE style
+plt.style.use(pltstyles.ieee)
+
+# Create your plot
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3], [1, 4, 9])
+plt.savefig('plot.png')
+```
+
+See `src/personaltools/matplotlib_styles/README.md` for more details and usage examples.
+
