@@ -20,9 +20,3 @@ qr-gen = "personaltools.qr_generator:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/personaltools"]
-
-[tool.hatch.build]
-include = [
-    "src/personaltools/**/*.py",
-    "src/personaltools/**/*.mplstyle",
-]
