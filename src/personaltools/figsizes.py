@@ -1,0 +1,2 @@
+SINGLE_COL = (3.5, 3.5)
+DOUBLE_COL = (7, 3.5)
