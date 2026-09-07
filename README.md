@@ -67,3 +67,5 @@ plt.savefig('plot.png')
 
 See `src/personaltools/matplotlib_styles/README.md` for more details and usage examples.
 
+## Scientific Writing
+The folder `scientific_writing` contains documents such as writing styles or other guidelines.
